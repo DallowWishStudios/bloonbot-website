@@ -1,0 +1,33 @@
+$fontI1: #fff;
+$fontI2: #FFCDDD;
+$fontSize1: 4.5rem;
+$fontSize2: 2.4rem;
+$fontSize3: 0.8rem;
+$containerPaddingTB: 10vh;
+$containerPaddingLR: 10%;
+$containerPadding: $containerPaddingTB $containerPaddingLR;
+
+$radius: 10px;
+$radiusMax: 5px;
+
+$landAccent: #4D1721;
+$accent: #5E2FEB;
+$gradientCol1: #DA4453;
+$gradientCol2: #89216B;
+$mainGradient: linear-gradient(28.77deg, $gradientCol1 7.18%, $gradientCol2 86.63%);
+$dark1: #151515;
+$dark2: rgb(26, 26, 26);
+$dark3: rgb(15, 15, 15);
+
+$textI1: #fff;
+$textI2: darken($color: $textI1, $amount: 30);
+$textI3: darken($color: $textI2, $amount: 20);
+$textI4: darken($color: $textI3, $amount: 20);
+
+$mainBtn: rgb(252, 66, 85);
+$bezier: cubic-bezier(0,.78,.34,.95);
+$trans: all 0.2s $bezier;
+
+$bpPhone: 414px;
+$bpTablet: 768px;
+$bpHD: 1280px;

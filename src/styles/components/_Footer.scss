@@ -1,0 +1,18 @@
+.Footer {
+    background: $dark1;
+    align-content: center;
+    color: $textI3;
+    position: relative;
+
+    .terms > ul {
+      padding: 0;
+    }
+
+    li {
+      text-align: center;
+    }
+
+    .terms li:last-child {
+      margin-top: 10px;
+    }
+  }

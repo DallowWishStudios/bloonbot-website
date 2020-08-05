@@ -1,0 +1,41 @@
+.HowToUsePage {
+    @include stdSection($dark2);
+    padding: 60px $containerPaddingLR;
+
+    .installation {
+        width: 50%;
+    }
+
+    .installationPath {
+        width: 30%;
+    }
+
+    ol {list-style: none; counter-reset: li}
+
+    li {
+        margin: 40px 0;
+        counter-increment: li;
+
+        &::before {
+            content: counter(li)".";
+            color: $textI3;
+            display: inline-block;
+            width: 2em;
+            margin-left: -2em;
+        }
+    }
+
+    @media (max-width: $bpTablet) {
+        flex-flow: column;
+        justify-content: center;
+
+        .installation, .installationPath {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        li {
+            margin: 20px 0;
+        }
+    }
+}

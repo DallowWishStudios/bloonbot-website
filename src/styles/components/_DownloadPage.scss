@@ -1,0 +1,92 @@
+.DownloadPage {
+    @include stdSection($dark1);
+  
+    header {
+      margin-bottom: 1rem;
+    }
+  
+    .download {
+      display: flex;
+      flex-flow: column;
+      position: relative;
+      margin-bottom: 80px;
+      width: 50%;
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .desc {
+      color: $textI2;
+      margin-bottom: 20px;
+
+      .warning {
+        display: block;
+        margin-bottom: 10px;
+        background: rgba(255, 199, 77, 0.356);
+        padding: 10px;
+        border-left: 4px solid rgba(255, 211, 66, 0.842);
+        color: rgb(235, 235, 235);
+        border-radius: 0 5px 5px 0;
+      }
+    }
+
+    .version, .system {
+      color: $textI3;
+    }
+
+    .btns {
+      display: flex;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .btn.secondary {
+      display: flex;
+      justify-content: center;
+      background: none;
+      color: $mainBtn;
+      margin-left: 10px;
+      text-align: center;
+
+      &:hover {
+        color: white;
+        border: 2px solid white;
+      }
+    }
+    
+    .chatArt {
+      width: 50%;
+      margin-right: 15%;
+    }
+
+    @media (min-width: $bpTablet) {
+      &.mainPage {
+        padding: $containerPaddingTB*2 $containerPaddingLR;
+      }
+    }
+
+    @media (max-width: $bpTablet) {
+      flex-flow: column-reverse;
+      justify-content: center;
+      padding: 50px $containerPaddingLR;
+
+      .download {
+        margin: 0 0 50px;
+        width: 100%;
+      }
+
+      .btn {
+        width: 50%;
+      }
+
+      .chatArt {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }

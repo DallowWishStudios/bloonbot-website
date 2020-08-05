@@ -1,0 +1,61 @@
+@import '../vars';
+
+.Dialogue {
+
+    .overlay {        
+        position: fixed;
+        background: rgb(0, 0, 0);
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .dialogueBox {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        background: rgb(70, 18, 18);
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .content, .title {
+        text-align: center;
+    }
+
+    .title {
+        font-weight: bold;
+        margin-bottom: 6px;
+        font-size: 1.2rem;
+    }
+
+    .btns {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+
+        .btn {
+            padding: 8px 30px;
+            border: 1px solid white;
+        }
+
+        .ok {
+            background: white;
+            color: #333;
+        }
+
+        .cancel {
+            color: white;
+        }
+    }
+
+    @media (max-width: $bpPhone) {
+        .dialogueBox {
+            width: 90%;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@mixin stdSection($bg: $dark1) {
+    background: $bg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}

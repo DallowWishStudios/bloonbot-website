@@ -1,0 +1,211 @@
+@import 'vars';
+
+.BBTE {
+    $border: #444;
+    display: flex;
+    flex-wrap: wrap;
+
+    #botPanel {
+        position: relative;
+        height: min-content;
+
+        input, textarea {
+            padding: 6px;
+        }
+        
+        a {
+            font-weight: normal;
+        }
+        
+        &.right {
+            position: absolute;
+        }
+
+        .bot-window {
+            border: 1px solid #444;
+        }
+
+        @media (max-width: 450px) {
+            width: 100%;
+
+            .bot-window {
+                position: fixed;
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .disabled {
+        pointer-events: none;
+    }
+
+    .interfaceBox.disabled {
+        filter: brightness(0.5);
+    }
+
+    .container {
+        // margin: 0 470px;
+        position: relative;
+        width: 600px;
+        margin: 0 30px 40px;
+    }
+
+    input, textarea {
+        background: rgb(43, 43, 43);
+        padding: 6px;
+
+        &:focus {
+            background: rgb(63, 63, 63);
+        }
+    }
+
+    p {
+        margin-top: 0;
+        padding-top: 10px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-top: 0;
+        color: $textI2;
+    }
+
+    .back {
+        fill: $textI2;
+        color: $textI2;
+        display: flex;
+        align-items: center;
+        font-weight: normal;
+        transition: $trans;
+
+        svg.backArrow {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            fill: white;
+            color: white;
+        }
+    }
+
+    .me, .stranger, .chat {
+        border: 1px solid $border;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .me {
+        border-top: none;
+    }
+
+    .stranger {
+        margin-top: 50px;
+    }
+
+    .interface {
+        display: flex;
+        margin-top: 10px;
+        align-items: stretch;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        textarea {
+            flex: 1 0 100%;
+            resize: none;
+            margin-bottom: 10px;
+            height: 80px;
+
+            &.disabled {
+                background: #222;
+            }
+        }
+    }
+
+    .chat {
+        height: 500px;
+        // overflow-x: hidden;
+        overflow-wrap: break-word;
+        overflow-y: auto;
+        color: #ddd;
+
+        .info {
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid $border;
+            color: $textI3;
+        }
+
+        .ownerLabel {
+            font-weight: bold;
+        }
+
+        .my, .str {
+            margin-bottom: 5px;
+        }
+
+        .endOfChat {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        button.disconnect {
+            margin-top: 10px;
+        }
+    }
+
+    .btn {
+        $send: rgb(100, 170, 59);
+        $sendHover: rgb(107, 236, 32);
+
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        background: none;
+        border: 2px solid darken($color: $mainBtn, $amount: 30);
+        color: darken($color: $mainBtn, $amount: 30);
+        font-size: 12px;
+        padding: 10px 20px;
+        flex-basis: 160px;
+        justify-content: center;
+
+        &:hover {
+            border: 2px solid $mainBtn;
+        }
+
+        &.send {
+            color: $send;
+            border: 2px solid $send;
+
+            &:hover {
+                color: $sendHover;
+                border: 2px solid $sendHover;
+            }
+        }
+
+        &.disabled {
+            $disabled: #333;
+            border: 2px solid $disabled !important;
+            color: $disabled !important;
+        }
+    }
+    
+    @media (max-width: 800px) {
+        .container {
+            margin: 10px 15px 40px;
+
+            .btn {
+                flex-basis: 40%;
+            }
+        }
+
+        .chat {
+            height: 300px;
+        }
+    }
+}

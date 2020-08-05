@@ -1,0 +1,58 @@
+@import '../vars';
+
+.btn, .btn.secondary {
+    display: inline-flex;
+    transition: $trans;
+    width: max-content;
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    &:hover {
+        color: $mainBtn;
+        background: none;
+
+        svg {
+        transform: translateY(20px);
+        }
+
+        svg.primary {
+        opacity: 0;
+        }
+
+        svg.secondary {
+        transform: translateY(0);
+        opacity: 1;
+        }
+    }
+
+    svg {
+        transition: $trans;
+        height: 1.1em;
+        margin-right: 5px;
+        fill: $dark2;
+    }
+
+    svg.secondary {
+        position: absolute;
+        transform: translateY(-20px);
+        opacity: 0;
+        fill: $mainBtn;
+        left: 0;
+    }
+}
+
+@media (max-width: $bpTablet) {
+    // .btnContainer {
+    //   display: flex;
+    //   justify-content: center;
+    // }
+
+    .btn {
+        justify-content: center;
+    }
+}

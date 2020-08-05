@@ -1,0 +1,98 @@
+.LandingPage {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  padding: $containerPadding;
+  background: $mainGradient;
+
+  .btns {
+    display: flex;
+    $btnCol: white;
+    $btnCol2: $landAccent;
+
+    .btn {
+      margin-right: 1rem;
+      border: 2px solid $btnCol;
+    }
+
+    .secondary {
+      background: none ;
+      color: $btnCol;
+    }
+
+    .primary {
+      color: $gradientCol1;
+      background: $btnCol;
+    }
+
+    .primary:hover {
+      border: 2px solid $btnCol2;
+      background: $btnCol2;
+    }
+
+    .secondary:hover {
+      border: 2px solid $btnCol2;
+      color: $btnCol2;
+    }
+  }
+
+  .mainSentences {
+    position: absolute;
+    bottom: 10%;
+    width: 600px;
+    white-space: pre-line;
+
+    h1 {
+      font-size: $fontSize1;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      color: $fontI2;
+      line-height: 28px;
+      margin: 30px 0;
+    }
+  }
+
+  .bloonMain {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    height: 800px;
+  }
+
+  @media (max-width: $bpHD){
+    .bloonMain {
+      height: 500px;
+    }
+  }
+
+  @media (max-width: $bpTablet){
+    .mainSentences {
+      top: unset;
+      bottom: 10%;
+
+      p {
+        line-height: 15px;
+        width: 40%;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+    }
+
+    .bloonMain {
+      opacity: 0.1;
+    }
+  }
+
+  @media (max-width: $bpPhone){
+    .bloonMain {
+      height: 300px;
+    }
+  }
+}

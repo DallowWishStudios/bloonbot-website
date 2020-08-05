@@ -1,0 +1,150 @@
+.NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 1px;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 30px $containerPaddingLR;
+  box-sizing: border-box;
+
+  h2 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    z-index: 2;
+
+    sub {
+      font-size: 0.8rem;
+      color: #fff9;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .burgerMenu {
+    fill: white;
+    right: 0;
+    z-index: 2;
+    padding: 10px;
+    padding-right: 0;
+
+    .menu {
+      transition: $trans;
+      opacity: 0;
+    }
+
+    .close {
+      transition: $trans;
+      opacity: 1;
+    }
+
+    &.closed {
+      .menu {
+        opacity: 1;
+        transform: translateX(24px);
+      }
+  
+      .close {
+        transform: translateX(24px);
+        opacity: 0;
+      }
+    }
+  }
+
+  .mobileNav {
+    $mobileMenuWidth: 60vw;
+
+    position: absolute;
+    width: $mobileMenuWidth;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background: $dark1;
+    z-index: 1;
+    padding-top: 80px;
+    transition: $trans;
+
+    &.closed {
+      transform: translateX($mobileMenuWidth);
+    }
+
+    .mainNav {
+      flex-flow: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .navItem {
+      margin: 0;
+      padding: 30px;
+      width: 100%;
+    }
+  }
+
+  .navItem {
+    transition: all 0.4s $bezier;
+    // margin: 0 2.6em;
+    padding: 3px;
+    font-size: 0.9em;
+    color: #fff9;
+    position: relative;
+    text-decoration: none;
+    font-weight: normal;
+    margin: 0 0 0 3em;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.secondaryBtn {
+      color: $fontI1;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 110%;
+      height: 100%;
+      background: $accent;
+      transition: $trans;
+      transform: scaleY(0) translateX(-50%);
+      transform-origin: top;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: -1;
+      border-radius: 3px;
+    }
+
+    &:first-of-type::after {
+      background: $landAccent;
+    }
+
+    &.active {
+      color: white;
+
+      &::after {
+        transform: scaleY(1) translateX(-50%);
+      }
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  // .squeezed {
+  //   .navItem {
+  //     margin: 0 0 0 3em;
+  //   }
+  // }
+}
