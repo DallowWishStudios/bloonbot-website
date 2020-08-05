@@ -36,8 +36,8 @@ function Download(props){
                 </div>
 
                 <div className="btns">
-                    <AnimatedButton svgPath="M16 11h5l-9 10-9-10h5v-11h8v11zm1 11h-10v2h10v-2z" href={launcher} text='Download' />
-                    <Link to='/bbte' className="btn secondary"> Try out </Link>
+                    <AnimatedButton svgPath="M16 11h5l-9 10-9-10h5v-11h8v11zm1 11h-10v2h10v-2z" href={launcher} text='DOWNLOAD' />
+                    <Link to='/bbte' className="btn secondary"> TRY OUT </Link>
                 </div>
             </div>
         </section>
