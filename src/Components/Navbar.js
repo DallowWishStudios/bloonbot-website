@@ -3,8 +3,6 @@ import React from 'react'
 let prevActiveItem = null
 let isTopSqueezed = false
 const handleScroll = function (e) {
-  // console.log(this.props.location.pathname);
-
   const scrollY = window.scrollY
   const navItems = this.nav.current.children
   const topOffsets = this.props.topOffsets
@@ -26,9 +24,9 @@ const handleScroll = function (e) {
   let activeItem = navItems[activeOffsetIndex-1]
   if(!activeItem){
     activeItem = navItems[navItems.length-1]
-  } 
+  }
 
-  if(prevActiveItem) prevActiveItem.classList.remove('active') 
+  if(prevActiveItem) prevActiveItem.classList.remove('active')
   activeItem.classList.add('active')
   prevActiveItem = activeItem
 }
