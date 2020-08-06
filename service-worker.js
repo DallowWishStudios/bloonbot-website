@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bloonbot-website/precache-manifest.4676269cf85a698c2d737472d7c764d0.js"
+  "/bloonbot-website/precache-manifest.b317dd5f4beb8a94fc227951a8ba9dbf.js"
 );
 
 self.addEventListener('message', (event) => {
