@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1753dd0eb8d27aa8a842d88fcccea8e3",
+    "revision": "b7d74aecab8075c1c72e6a853ccbce09",
     "url": "/bloonbot-website/index.html"
   },
   {
-    "revision": "5f13aa8fd376e57ec600",
-    "url": "/bloonbot-website/static/css/main.e19a8a53.chunk.css"
+    "revision": "f908add20ef4406ce15e",
+    "url": "/bloonbot-website/static/css/main.7d8badb7.chunk.css"
   },
   {
     "revision": "bb3befc6095d868ded65",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bloonbot-website/static/js/2.4d9a2496.chunk.js.LICENSE"
   },
   {
-    "revision": "5f13aa8fd376e57ec600",
+    "revision": "f908add20ef4406ce15e",
     "url": "/bloonbot-website/static/js/main.32acbc1b.chunk.js"
   },
   {
