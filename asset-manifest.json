@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/bloonbot-website/static/css/main.9fe0fe59.chunk.css",
-    "main.js": "/bloonbot-website/static/js/main.a03ec5db.chunk.js",
-    "main.js.map": "/bloonbot-website/static/js/main.a03ec5db.chunk.js.map",
+    "main.css": "/bloonbot-website/static/css/main.e19a8a53.chunk.css",
+    "main.js": "/bloonbot-website/static/js/main.32acbc1b.chunk.js",
+    "main.js.map": "/bloonbot-website/static/js/main.32acbc1b.chunk.js.map",
     "runtime-main.js": "/bloonbot-website/static/js/runtime-main.f8ee8353.js",
     "runtime-main.js.map": "/bloonbot-website/static/js/runtime-main.f8ee8353.js.map",
-    "static/js/2.f0c5082c.chunk.js": "/bloonbot-website/static/js/2.f0c5082c.chunk.js",
-    "static/js/2.f0c5082c.chunk.js.map": "/bloonbot-website/static/js/2.f0c5082c.chunk.js.map",
+    "static/js/2.4d9a2496.chunk.js": "/bloonbot-website/static/js/2.4d9a2496.chunk.js",
+    "static/js/2.4d9a2496.chunk.js.map": "/bloonbot-website/static/js/2.4d9a2496.chunk.js.map",
     "index.html": "/bloonbot-website/index.html",
-    "precache-manifest.13100ecb693308bc3d9dbd23c1de9c2c.js": "/bloonbot-website/precache-manifest.13100ecb693308bc3d9dbd23c1de9c2c.js",
+    "precache-manifest.7cb65decfcf757a5ab41bb144466aefa.js": "/bloonbot-website/precache-manifest.7cb65decfcf757a5ab41bb144466aefa.js",
     "service-worker.js": "/bloonbot-website/service-worker.js",
-    "static/css/main.9fe0fe59.chunk.css.map": "/bloonbot-website/static/css/main.9fe0fe59.chunk.css.map",
-    "static/js/2.f0c5082c.chunk.js.LICENSE": "/bloonbot-website/static/js/2.f0c5082c.chunk.js.LICENSE",
+    "static/css/main.e19a8a53.chunk.css.map": "/bloonbot-website/static/css/main.e19a8a53.chunk.css.map",
+    "static/js/2.4d9a2496.chunk.js.LICENSE": "/bloonbot-website/static/js/2.4d9a2496.chunk.js.LICENSE",
     "static/media/bloonCorner.c43820b3.svg": "/bloonbot-website/static/media/bloonCorner.c43820b3.svg",
     "static/media/bloonbot iso art 1.3.svg": "/bloonbot-website/static/media/bloonbot iso art 1.3.5ab561e8.svg",
     "static/media/condits.png": "/bloonbot-website/static/media/condits.ab6f6144.png",
     "static/media/guide.png": "/bloonbot-website/static/media/guide.e55f62e0.png",
+    "static/media/guideBG.jpg": "/bloonbot-website/static/media/guideBG.17f65c74.jpg",
     "static/media/installing-road.png": "/bloonbot-website/static/media/installing-road.a4e99eb4.png",
     "static/media/launcher.exe": "/bloonbot-website/static/media/launcher.37a61d9e.exe",
     "static/media/logo.png": "/bloonbot-website/static/media/logo.95c390cb.png",
@@ -26,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f8ee8353.js",
-    "static/js/2.f0c5082c.chunk.js",
-    "static/css/main.9fe0fe59.chunk.css",
-    "static/js/main.a03ec5db.chunk.js"
+    "static/js/2.4d9a2496.chunk.js",
+    "static/css/main.e19a8a53.chunk.css",
+    "static/js/main.32acbc1b.chunk.js"
   ]
 }

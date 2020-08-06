@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "08e446c1ee6b7c99f675ed3e2c4e0efd",
+    "revision": "1753dd0eb8d27aa8a842d88fcccea8e3",
     "url": "/bloonbot-website/index.html"
   },
   {
-    "revision": "642aeb64b55529efe93e",
-    "url": "/bloonbot-website/static/css/main.9fe0fe59.chunk.css"
+    "revision": "5f13aa8fd376e57ec600",
+    "url": "/bloonbot-website/static/css/main.e19a8a53.chunk.css"
   },
   {
-    "revision": "84306df511ae7a6b94ae",
-    "url": "/bloonbot-website/static/js/2.f0c5082c.chunk.js"
+    "revision": "bb3befc6095d868ded65",
+    "url": "/bloonbot-website/static/js/2.4d9a2496.chunk.js"
   },
   {
     "revision": "9db4df11ba0f7963efd2947dc87ddd28",
-    "url": "/bloonbot-website/static/js/2.f0c5082c.chunk.js.LICENSE"
+    "url": "/bloonbot-website/static/js/2.4d9a2496.chunk.js.LICENSE"
   },
   {
-    "revision": "642aeb64b55529efe93e",
-    "url": "/bloonbot-website/static/js/main.a03ec5db.chunk.js"
+    "revision": "5f13aa8fd376e57ec600",
+    "url": "/bloonbot-website/static/js/main.32acbc1b.chunk.js"
   },
   {
     "revision": "f0c4b9848ba7533f4511",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e55f62e01061ea560e7acd686f7fde95",
     "url": "/bloonbot-website/static/media/guide.e55f62e0.png"
+  },
+  {
+    "revision": "17f65c74470658a96658e686dc59195e",
+    "url": "/bloonbot-website/static/media/guideBG.17f65c74.jpg"
   },
   {
     "revision": "a4e99eb46ef94d772f4fcf698de6ce72",
