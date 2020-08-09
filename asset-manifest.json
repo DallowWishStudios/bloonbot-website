@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bloonbot-website/static/css/main.ccd2056a.chunk.css",
-    "main.js": "/bloonbot-website/static/js/main.b165af9a.chunk.js",
-    "main.js.map": "/bloonbot-website/static/js/main.b165af9a.chunk.js.map",
+    "main.js": "/bloonbot-website/static/js/main.d2572cda.chunk.js",
+    "main.js.map": "/bloonbot-website/static/js/main.d2572cda.chunk.js.map",
     "runtime-main.js": "/bloonbot-website/static/js/runtime-main.f8ee8353.js",
     "runtime-main.js.map": "/bloonbot-website/static/js/runtime-main.f8ee8353.js.map",
     "static/js/2.4d9a2496.chunk.js": "/bloonbot-website/static/js/2.4d9a2496.chunk.js",
     "static/js/2.4d9a2496.chunk.js.map": "/bloonbot-website/static/js/2.4d9a2496.chunk.js.map",
     "index.html": "/bloonbot-website/index.html",
-    "precache-manifest.f3cbf54d28b7a3b37787791d6c126cc1.js": "/bloonbot-website/precache-manifest.f3cbf54d28b7a3b37787791d6c126cc1.js",
+    "precache-manifest.8351fbcc6caee715bc3e692c52d2cab8.js": "/bloonbot-website/precache-manifest.8351fbcc6caee715bc3e692c52d2cab8.js",
     "service-worker.js": "/bloonbot-website/service-worker.js",
     "static/css/main.ccd2056a.chunk.css.map": "/bloonbot-website/static/css/main.ccd2056a.chunk.css.map",
     "static/js/2.4d9a2496.chunk.js.LICENSE": "/bloonbot-website/static/js/2.4d9a2496.chunk.js.LICENSE",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.f8ee8353.js",
     "static/js/2.4d9a2496.chunk.js",
     "static/css/main.ccd2056a.chunk.css",
-    "static/js/main.b165af9a.chunk.js"
+    "static/js/main.d2572cda.chunk.js"
   ]
 }
