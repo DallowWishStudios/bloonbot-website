@@ -1,25 +1,23 @@
 import React from 'react'
+import { HashLink as Link } from 'react-router-hash-link'
+
 import {ReactComponent as Icon} from '../img/svg/bloonCorner.svg'
 
 function LandingPage(){
     return (
-        <section className='LandingPage mainPage'>
+        <section className='LandingPage mainPage' id='home'>
             <Icon className='bloonMain'></Icon>
             <div className='mainSentences'>
                 <h1>
-                    {/* This is <br/>
-                    the bot you <br/>
-                    have been <br/>
-                    waiting for */}
                     Chat bot like <br/> you've never <br/> seen before
                 </h1>
                 <p>
-                    Explore one of the most advanced injectable bots <br/>
+                    Explore one of the most advanced injectable bots
                     - it is easy to use and has tons of features
                 </p>
                 <div className="btns">
-                    <a className="btn primary" href='#download'>Explore</a>
-                    <a className="btn secondary" href='https://www.patreon.com/dallowwish' target='blank'>Donate</a>
+                    <Link className="btn primary" to='#download'>Explore</Link>
+                    <Link className="btn secondary" to='#quickGuide' target='blank'>See guide</Link>
                 </div>
             </div>
         </section>

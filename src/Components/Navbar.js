@@ -1,35 +1,5 @@
 import React from 'react'
-
-let prevActiveItem = null
-let isTopSqueezed = false
-const handleScroll = function (e) {
-  const scrollY = window.scrollY
-  const navItems = this.nav.current.children
-  const topOffsets = this.props.topOffsets
-  
-  // if(!this.props.isMobile){
-  //   if(scrollY === 0){
-  //     this.nav.current.classList.remove('squeezed')
-  //     isTopSqueezed = false
-  //   } else if(!isTopSqueezed) {
-  //     this.nav.current.classList.add('squeezed')
-  //     isTopSqueezed = true
-  //   }  
-  // }
-
-  const activeOffsetIndex = topOffsets.findIndex((offset) => {
-    return scrollY+300 <= offset
-  });
-  
-  let activeItem = navItems[activeOffsetIndex-1]
-  if(!activeItem){
-    activeItem = navItems[navItems.length-1]
-  }
-
-  if(prevActiveItem) prevActiveItem.classList.remove('active')
-  activeItem.classList.add('active')
-  prevActiveItem = activeItem
-}
+import { HashLink as Link } from 'react-router-hash-link'
 
 class Navbar extends React.Component {
   constructor(props){
@@ -40,6 +10,7 @@ class Navbar extends React.Component {
     this.burgerMenu = React.createRef()
     this.state = {}
     this.sealed = false
+    this.prevActiveItem = null
   }
 
   componentWillUnmount(){
@@ -47,12 +18,31 @@ class Navbar extends React.Component {
   }
 
   componentDidUpdate(){
-    handleScroll.bind(this)()
+    this.handleScroll.bind(this)()
     
     if(this.sealed) return
     this.sealed = true
 
-    document.onscroll = handleScroll.bind(this)
+    document.onscroll = this.handleScroll.bind(this)
+  }
+
+  handleScroll(){
+    const scrollY = window.scrollY
+    const navItems = this.nav.current.children
+    const topOffsets = this.props.topOffsets
+  
+    const activeOffsetIndex = topOffsets.findIndex((offset) => {
+      return scrollY+300 <= offset
+    });
+    
+    let activeItem = navItems[activeOffsetIndex-1]
+    if(!activeItem){
+      activeItem = navItems[navItems.length-1]
+    }
+  
+    if(this.prevActiveItem) this.prevActiveItem.classList.remove('active')
+    activeItem.classList.add('active')
+    this.prevActiveItem = activeItem
   }
 
   toggleMobileNav(e){
@@ -79,12 +69,12 @@ class Navbar extends React.Component {
   placeNavItems(){
     return (
       <nav className='mainNav' ref={this.nav}>
-        <a className='navItem' href='/#'> <span className='text'> Home </span> </a>
-        <a className='navItem' href='#download'> <span className='text'> Download </span> </a>
-        <a className='navItem' href='#installation'> <span className='text'> Installation </span> </a>
-        <a className='navItem' href='#quickGuide'> <span className='text'> Quick Guide </span></a>
-        <a className='navItem' href='#guide'> <span className='text'> Guide </span></a>
-        <a className='navItem' href='#contact'> <span className='text'> Contact </span></a>  
+        <Link className='navItem' to='#home'> <span className='text'> Home </span> </Link>
+        <Link className='navItem' to='#download'> <span className='text'> Download </span> </Link>
+        <Link className='navItem' to='#installation'> <span className='text'> Installation </span> </Link>
+        <Link className='navItem' to='#quickGuide'> <span className='text'> Quick Guide </span></Link>
+        <Link className='navItem' to='#guide'> <span className='text'> Guide </span></Link>
+        <Link className='navItem' to='#contact'> <span className='text'> Contact </span></Link>  
       </nav>
     )
   }
@@ -92,7 +82,7 @@ class Navbar extends React.Component {
   render(){
     return (
       <header className='NavBar' ref={this.navBar}>
-        <h2><a href='/#'>BloonBot<sub>beta</sub></a></h2>
+        <h2><Link to='#home'>BLOONBOT<sub>beta</sub></Link></h2>
         { this.props.isMobile ? this.placeMobileMenu() : this.placeNavItems() }
       </header>
     )

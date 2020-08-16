@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 
 import chatSvg from '../img/svg/bloonbot iso art 1.3.svg'
 import launcher from '../download/launcher.exe'
@@ -15,11 +15,11 @@ function Download(props){
                 </header>
 
                 <span className='desc'>
-                    <span className='warning'>Notice that BloonBot is now in experimental phase, so bugs may be occuring. If that happens, please report them <a href='#contact'>here</a>.</span>
+                    <span className='warning'>Notice that BloonBot is now in experimental phase, so bugs may be occuring. If that happens, please report them <Link to='#contact'>here</Link>.</span>
                     <p>Installing BloonBot is as simple as downloading and opening installer!</p>
                     <p>
-                        If for some reason installation isn't going as smooth for you, check <a href="#installation">💻 installation</a>.
-                        If you installed BloonBot successfully, you can check out <a href="#guide">📗 guide</a> to learn how to use the bot.
+                        If for some reason installation isn't going as smooth for you, check <Link to="#installation">💻 installation</Link>.
+                        If you installed BloonBot successfully, you can check out <Link to="#guide">📗 guide</Link> to learn how to use the bot.
                     </p>
                     <p>
                         You also can try out bloonbot in BloonBot Testing Environment in which you can send messages either as you or other chatter (or chatters) - that way you can easily test BloonBot features, templates and options.

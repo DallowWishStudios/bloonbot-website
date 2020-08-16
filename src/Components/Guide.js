@@ -10,11 +10,12 @@ import uploadBtn from '../img/tutorial/upload-btn.png'
 import loginBtn from '../img/tutorial/login-btn.png'
 import browse from '../img/tutorial/browse.png'
 import browseBtn from '../img/tutorial/browse-btn.png'
+import guideBG from '../img/tutorial/guideBG.jpg'
 
 export default function Guide() {
     return (<>
         <section className="mainPage QuickGuide" id='quickGuide'>
-            <a href={guide}>
+            <a href={guideBG}>
                 <div className="text i3">Click to zoom 🔍</div>
                 <img src={guide} alt="default"/>
             </a>

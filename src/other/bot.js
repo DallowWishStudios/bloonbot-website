@@ -1468,7 +1468,7 @@ export default () => {
                 title.href = 'https://bit.ly/bloonbot'
                 title.target = 'blank'
                 const byDWS = makeEl('bot-by', 'by Dallow Wish Studios', 'a')
-                byDWS.href = 'https://www.facebook.com/PaprykarzPotworowski'
+                byDWS.href = 'https://www.facebook.com/dallowwish'
                 byDWS.target = 'blank'
                 const credits = makeEl('bot-credits', [title, byDWS])
                 this.panel.appendChild(credits);

@@ -121,18 +121,14 @@ input, textarea {
 }
 
 @media (max-width: $bpTablet){
-  :root {
-    font-size: 14px;
-  }
-
   h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: $bpPhone){
   :root {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .mainPage {
