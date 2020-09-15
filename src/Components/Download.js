@@ -15,15 +15,14 @@ function Download(props){
                 </header>
 
                 <span className='desc'>
-                    <span className='warning'>Notice that BloonBot is now in experimental phase, so bugs may be occuring. If that happens, please report them <Link to='#contact'>here</Link>.</span>
-                    <p>Installing BloonBot is as simple as downloading and opening installer!</p>
-                    <p>
-                        If for some reason installation isn't going as smooth for you, check <Link to="#installation">💻 installation</Link>.
+                    <p>Installing BloonBot is as simple as downloading and opening installer! 
+                        If for some reason installation isn't going as smooth for you, check <Link to="#installation">💻 installation</Link>. 
                         If you installed BloonBot successfully, you can check out <Link to="#guide">📗 guide</Link> to learn how to use the bot.
                     </p>
                     <p>
                         You also can try out bloonbot in BloonBot Testing Environment in which you can send messages either as you or other chatter (or chatters) - that way you can easily test BloonBot features, templates and options.
                     </p>
+                    <span className='warning'>Notice that BloonBot is now in experimental phase, so bugs may be occuring. If that happens, please report them <Link to='#contact'>here</Link>.</span>
                 </span>
 
                 <div className="details">
